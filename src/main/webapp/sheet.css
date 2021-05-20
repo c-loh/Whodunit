@@ -1,0 +1,94 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* for all options */
+.option {
+    width: 100px;
+    height: 70px;
+    text-align: center;
+}
+
+/* for all traits */
+.trait {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+/* for unmarked traits */
+.unmarked {
+    border: none;
+    margin: 2px;
+}
+
+/* for circled traits */
+.circled {
+    /* -moz-border-radius: 50%; */
+    border-radius: 50%;
+    border: 3px solid red;
+    margin: 2px;
+}
+
+/* for crossed-off traits */
+.crossed-off {
+    border: none;
+    /* diagonal slash through the button */
+    background:
+            linear-gradient(to top left,
+            transparent 45%,
+            rgba(255,0,0,1) 46%,
+            rgba(255,0,0,1) 54%,
+            transparent 55%);
+    margin: 2px;
+}
+
+/* clue tables */
+.clue-table td {
+    border: none;
+    height: 50px;
+}
+.clue-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+#upper-left {
+    /*border-style: none solid solid none;*/
+    border-style: none solid none none;
+    border-color: black;
+    border-width: thin;
+    float: left;
+    width: 500px;  /* half of whole thing */
+}
+#upper-right {
+    /*border-style: none none solid solid;*/
+    border-style: none;
+    border-color: black;
+    border-width: thin;
+    float: left;
+    width: 500px;  /* half of whole thing */
+}
+#lower-left {
+    /*border-style: solid solid none none;*/
+    border-style: solid solid none none;
+    border-color: black;
+    border-width: thin;
+    float: left;
+    width: 500px;  /* half of whole thing */
+}
+#lower-right {
+    /*border-style: solid none none solid;*/
+    border-style: solid none none none;
+    border-color: black;
+    border-width: thin;
+    float: left;
+    width: 500px;  /* half of whole thing */
+}
+.label-input {
+    outline: 0;
+    border-width: 0 0 1px 0;
+}
+.notes {
+    width: 1000px;  /* same as the table above */
+}

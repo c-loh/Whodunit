@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whodunit - Detective Sheet</title>
+    <!-- link CSS styling, Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="sheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery, Ajax, jQuery UI -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- JS file (after jQuery so it can access those functions) -->
+    <script src="sheet.js"></script>
+</head>
+<body>
+
+    <div class="m-3">
+
+        <h3>Detective Sheet</h3>
+
+        <table id="suspects" class="mb-3">
+            <thead id="suspects-headers">
+                <!-- ajax -->
+            </thead>
+            <tbody id="suspects-traits">
+                <!-- ajax -->
+            </tbody>
+        </table>
+
+        <table id="weapons" class="mb-3">
+            <thead id="weapons-headers">
+            <!-- ajax -->
+            </thead>
+            <tbody id="weapons-traits">
+            <!-- ajax -->
+            </tbody>
+        </table>
+
+        <table id="scenes" class="mb-3">
+            <thead id="scenes-headers">
+            <!-- ajax -->
+            </thead>
+            <tbody id="scenes-traits">
+            <!-- ajax -->
+            </tbody>
+        </table>
+
+        <table id="motives" class="mb-3">
+            <thead id="motives-headers">
+            <!-- ajax -->
+            </thead>
+            <tbody id="motives-traits">
+            <!-- ajax -->
+            </tbody>
+        </table>
+
+        <!-- fields for notes -->
+        <div id="notes-container">
+            <h3>Clues</h3>
+            <p>Change the text of the labels below to match your preferred orientation</p>
+
+            <table id="upper-left" class="clue-table">
+                <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td id="upper-left-data">
+                            <input type="text" value="Parlor (green)" class="label-input">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="upper-right" class="clue-table">
+                <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td id="upper-right-data">
+                            <input type="text" value="Conservatory (yellow)" class="label-input">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="clear: both"></div> <!-- undo float left -->
+
+            <table id="lower-left" class="clue-table">
+                <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td id="lower-left-data">
+                            <input type="text" value="Library (blue)" class="label-input">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="lower-right" class="clue-table">
+                <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td id="lower-right-data">
+                            <input type="text" value="Trophy Room (pink)" class="label-input">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="clear: both" class="mb-3"></div> <!-- undo float left -->
+
+            <!-- text entry box for other notes -->
+            <h3>Notes</h3>
+            <textarea class="notes"></textarea>
+        </div>
+
+    </div>
+
+</body>
+</html>
