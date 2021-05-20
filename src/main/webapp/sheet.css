@@ -59,7 +59,7 @@ table, th, td {
     border-color: black;
     border-width: thin;
     float: left;
-    width: 500px;  /* half of whole thing */
+    width: 400px;  /* half but with some wiggle room */
 }
 #upper-right {
     /*border-style: none none solid solid;*/
@@ -67,7 +67,7 @@ table, th, td {
     border-color: black;
     border-width: thin;
     float: left;
-    width: 500px;  /* half of whole thing */
+    width: 400px;  /* half but with some wiggle room */
 }
 #lower-left {
     /*border-style: solid solid none none;*/
@@ -75,7 +75,7 @@ table, th, td {
     border-color: black;
     border-width: thin;
     float: left;
-    width: 500px;  /* half of whole thing */
+    width: 400px;  /* half but with some wiggle room */
 }
 #lower-right {
     /*border-style: solid none none solid;*/
@@ -83,12 +83,12 @@ table, th, td {
     border-color: black;
     border-width: thin;
     float: left;
-    width: 500px;  /* half of whole thing */
+    width: 400px;  /* half but with some wiggle room */
 }
 .label-input {
     outline: 0;
     border-width: 0 0 1px 0;
 }
 .notes {
-    width: 1000px;  /* same as the table above */
+    width: 800px;  /* match width of other note stuff */
 }
