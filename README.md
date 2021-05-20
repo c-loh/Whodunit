@@ -9,7 +9,7 @@ Detective Sheet
 
 ## Access
 1. Download the project from GitHub
-   ```git clone [insert GitHub url here]```
+   ```git clone https://github.com/c-loh/Whodunit.git```
 2. Open the project in IntelliJ and use Local Tomcat run configuration
 3. Go to link: ```http://[your IP address]:8080/whodunit/```
     - Find IP address on Mac: go to System Preferences > Network, it should be listed under the part where it shows connection status
