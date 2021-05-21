@@ -24,8 +24,6 @@ Detective Sheet
     - Find IP address on Mac: go to System Preferences > Network, it should be listed under the part where it shows connection status
     
 ## To Do
-- Make it look nicer on mobile
-- Maybe an info button saying to use landscape on mobile and any other info?
 - Location/color labels for each section of the Detective Sheet
 - Autocomplete for the location labels?
 - Game board?

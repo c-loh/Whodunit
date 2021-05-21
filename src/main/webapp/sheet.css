@@ -3,16 +3,76 @@ table, th, td {
     border-collapse: collapse;
 }
 
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th, td {
+    height: 40px;
+    font-size: 15px;  /* make sure it fits in the box */
+}
+
+/* info buttons */
+.info-icon {
+    color: darkgray;
+}
+.info-text-container {
+    display: inline-block;
+    width: 300px;
+}
+.info-header {
+    display: inline;
+}
+.info-button {
+    display: inline;
+    margin-left: 10px;
+}
+.info-text {
+    margin: 0;
+}
+/* from: https://dev.to/kallmanation/building-a-popover-with-only-css-1085 */
+details[data-popover] > summary:focus {
+    outline: none;
+}
+details[data-popover] > summary::-webkit-details-marker {
+    display: none;
+    font-size: 0;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+details[data-popover] > summary {
+    list-style: none;
+}
+details[data-popover] {
+    position: relative;
+}
+details[data-popover] > summary + * {
+    position: absolute;
+}
+details[data-popover="right"] > summary + * {
+    top: 10%; /* keep top pretty much aligned with details top */
+    transform: translateX(10%);
+}
+.info-text-container {
+    background: lightgray;
+    border-radius: 25px;  /* rounded corners */
+    padding: 15px;
+}
+
 /* for all options */
 .option {
-    width: 100px;
+    /*width: 100px;*/
+    width: 10%;
     height: 70px;
     text-align: center;
 }
 
 /* for all traits */
 .trait {
-    width: 100px;
+    /*width: 100px;*/
+    width: 10%;
     height: 40px;
     text-align: center;
 }
@@ -54,41 +114,45 @@ table, th, td {
     vertical-align: middle;
 }
 #upper-left {
-    /*border-style: none solid solid none;*/
     border-style: none solid none none;
     border-color: black;
     border-width: thin;
     float: left;
-    width: 400px;  /* half but with some wiggle room */
+    /*width: 425px;  !* half but with some wiggle room *!*/
+    width: 50%;
 }
 #upper-right {
     /*border-style: none none solid solid;*/
-    border-style: none;
-    border-color: black;
-    border-width: thin;
+    border: none;
     float: left;
-    width: 400px;  /* half but with some wiggle room */
+    /*width: 425px;  !* half but with some wiggle room *!*/
+    width: 50%;
 }
 #lower-left {
-    /*border-style: solid solid none none;*/
     border-style: solid solid none none;
     border-color: black;
     border-width: thin;
     float: left;
-    width: 400px;  /* half but with some wiggle room */
+    /*width: 425px;  !* half but with some wiggle room *!*/
+    width: 50%;
 }
 #lower-right {
-    /*border-style: solid none none solid;*/
     border-style: solid none none none;
     border-color: black;
     border-width: thin;
     float: left;
-    width: 400px;  /* half but with some wiggle room */
+    /*width: 425px;  !* half but with some wiggle room *!*/
+    width: 50%;
 }
 .label-input {
     outline: 0;
     border-width: 0 0 1px 0;
 }
+.label-input:focus {  /* want to keep the input outline though when editing */
+    outline: -webkit-focus-ring-color auto 5px;
+}
 .notes {
-    width: 800px;  /* match width of other note stuff */
+    /*width: 850px;  !* match width of other note stuff *!*/
+    width: 100%;
+    min-height: 100px;
 }

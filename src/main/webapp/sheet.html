@@ -5,20 +5,32 @@
     <title>Whodunit - Detective Sheet</title>
     <!-- link CSS styling, Bootstrap -->
     <link rel="stylesheet" type="text/css" href="sheet.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- jQuery, Ajax, jQuery UI -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!--    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<!--    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
     <!-- JS file (after jQuery so it can access those functions) -->
     <script src="sheet.js"></script>
+    <!-- for info icon -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- for popover -->
+<!--    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+
 </head>
 <body>
 
     <div class="m-3">
 
-        <h3>Detective Sheet</h3>
+        <div class="info-container mb-2">
+            <h3 class="info-header">Detective Sheet</h3>
+            <details data-popover="right" class="info-button"><summary><i class="icon-info-sign info-icon"></i></summary>
+                <div class="info-text-container">
+                    <p class="info-text">Click any box to cycle through statuses: unmarked, circled, crossed-off</p>
+                    <p class="info-text">For mobile users: please use landscape orientation for the best experience!</p>
+                </div>
+            </details>
+        </div>
 
         <table id="suspects" class="mb-3">
             <thead id="suspects-headers">
@@ -58,8 +70,15 @@
 
         <!-- fields for notes -->
         <div id="notes-container">
-            <h3>Clues</h3>
-            <p>Change the text of the labels below to match your preferred orientation</p>
+
+            <div class="info-container mb-2">
+                <h3 class="info-header">Clues</h3>
+                <details data-popover="right" class="info-button"><summary><i class="icon-info-sign info-icon"></i></summary>
+                    <div class="info-text-container">
+                        <p class="info-text">Change the text of the labels below to match your preferred orientation</p>
+                    </div>
+                </details>
+            </div>
 
             <table id="upper-left" class="clue-table">
                 <tbody>
