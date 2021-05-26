@@ -10,6 +10,8 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
 <!--    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+    <!-- autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
     <!-- JS file (after jQuery so it can access those functions) -->
     <script src="sheet.js"></script>
     <!-- for info icon -->
@@ -32,6 +34,7 @@
             </details>
         </div>
 
+        <h5>Suspects // Library (blue)</h5>
         <table id="suspects" class="mb-3">
             <thead id="suspects-headers">
                 <!-- ajax -->
@@ -41,6 +44,7 @@
             </tbody>
         </table>
 
+        <h5>Weapons // Trophy Room (pink)</h5>
         <table id="weapons" class="mb-3">
             <thead id="weapons-headers">
             <!-- ajax -->
@@ -50,6 +54,7 @@
             </tbody>
         </table>
 
+        <h5>Scenes // Conservatory (yellow)</h5>
         <table id="scenes" class="mb-3">
             <thead id="scenes-headers">
             <!-- ajax -->
@@ -59,6 +64,7 @@
             </tbody>
         </table>
 
+        <h5>Motives // Parlor (green)</h5>
         <table id="motives" class="mb-3">
             <thead id="motives-headers">
             <!-- ajax -->
@@ -89,7 +95,12 @@
                     <tr>
                         <td><input type="text"></td>
                         <td id="upper-left-data">
-                            <input type="text" value="Parlor (green)" class="label-input">
+                            <select class="label-input">
+                                <option value="blue">Suspect (blue)</option>
+                                <option value="pink">Trophy Room (pink)</option>
+                                <option value="yellow">Conservatory (yellow)</option>
+                                <option value="green" selected>Parlor (green)</option>
+                            </select>
                         </td>
                     </tr>
                 </tbody>
@@ -103,7 +114,12 @@
                     </tr>
                     <tr>
                         <td id="upper-right-data">
-                            <input type="text" value="Conservatory (yellow)" class="label-input">
+                            <select class="label-input">
+                                <option value="blue">Suspect (blue)</option>
+                                <option value="pink">Trophy Room (pink)</option>
+                                <option value="yellow" selected>Conservatory (yellow)</option>
+                                <option value="green">Parlor (green)</option>
+                            </select>
                         </td>
                         <td><input type="text"></td>
                     </tr>
@@ -117,7 +133,12 @@
                     <tr>
                         <td><input type="text"></td>
                         <td id="lower-left-data">
-                            <input type="text" value="Library (blue)" class="label-input">
+                            <select class="label-input">
+                                <option value="blue" selected>Suspect (blue)</option>
+                                <option value="pink">Trophy Room (pink)</option>
+                                <option value="yellow">Conservatory (yellow)</option>
+                                <option value="green">Parlor (green)</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
@@ -131,7 +152,12 @@
                 <tbody>
                     <tr>
                         <td id="lower-right-data">
-                            <input type="text" value="Trophy Room (pink)" class="label-input">
+                            <select class="label-input">
+                                <option value="blue">Suspect (blue)</option>
+                                <option value="pink" selected>Trophy Room (pink)</option>
+                                <option value="yellow">Conservatory (yellow)</option>
+                                <option value="green">Parlor (green)</option>
+                            </select>
                         </td>
                         <td><input type="text"></td>
                     </tr>

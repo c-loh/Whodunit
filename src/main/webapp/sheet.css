@@ -152,7 +152,6 @@ details[data-popover="right"] > summary + * {
     outline: -webkit-focus-ring-color auto 5px;
 }
 .notes {
-    /*width: 850px;  !* match width of other note stuff *!*/
     width: 100%;
     min-height: 100px;
 }
